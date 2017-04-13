@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     var age = 18
     var pressed = 0
+    var pressed2 = 0
 
     @IBOutlet weak var theLabel: UILabel!
     
@@ -43,6 +44,9 @@ class ViewController: UIViewController {
             theLabel.text = "patience"
 
         }
+        
+        pressed2 += 1
+        print(pressed2)
 
     }
     override func viewDidLoad() {
