@@ -16,37 +16,21 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theLabel: UILabel!
     
+    @IBOutlet weak var text2: UITextField!
+    @IBOutlet weak var text1: UITextField!
+    
     @IBAction func theButton(_ sender: UIButton) {
         
-        
-        
-        if age >= 16 {
-            theLabel.text = "love"
-            age = 14
-        }
-        else {
-            theLabel.text = "patience"
-
-        }
-        pressed += 1
-        
-        print(pressed)
-        
+        print(text1.text!)
+        print(text2.text!)
+    
     }
     @IBAction func theOtherButton(_ sender: UIButton) {
         
+        var a = Int(text1.text!)!
+        var b = Int(text2.text!)!
+        theLabel.text = "Answer is...\(a + b)"
         
-        if age >= 14{
-            theLabel.text = "love you"
-            age = 16
-        }
-        else {
-            theLabel.text = "patience"
-
-        }
-        
-        pressed2 += 1
-        print(pressed2)
 
     }
     override func viewDidLoad() {

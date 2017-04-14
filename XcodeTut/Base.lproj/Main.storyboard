@@ -41,18 +41,42 @@
                                     <action selector="theOtherButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YG0-bb-JNO"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ie3-iu-Dh3">
+                                <rect key="frame" x="137.5" y="301" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="q0t-tI-8EV"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-kW-0O6">
+                                <rect key="frame" x="137.5" y="381" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="SKd-nS-48e"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PNl-Na-hhm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="9eM-tb-BhH"/>
                             <constraint firstItem="KrI-rV-IhO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gc4-GF-dJp"/>
+                            <constraint firstItem="ie3-iu-Dh3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iar-Oa-Cqk"/>
                             <constraint firstItem="aO0-2H-qwm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NYD-qY-fiN"/>
                             <constraint firstItem="aO0-2H-qwm" firstAttribute="top" secondItem="KrI-rV-IhO" secondAttribute="bottom" constant="50" id="Nre-uU-Rw6"/>
+                            <constraint firstItem="3zP-kW-0O6" firstAttribute="top" secondItem="ie3-iu-Dh3" secondAttribute="bottom" constant="50" id="fwc-Fe-rue"/>
+                            <constraint firstItem="3zP-kW-0O6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mr7-qe-wWG"/>
                             <constraint firstItem="PNl-Na-hhm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s7Y-B8-CKz"/>
+                            <constraint firstItem="ie3-iu-Dh3" firstAttribute="top" secondItem="aO0-2H-qwm" secondAttribute="bottom" constant="50" id="tgk-tF-IrS"/>
                             <constraint firstItem="KrI-rV-IhO" firstAttribute="top" secondItem="PNl-Na-hhm" secondAttribute="bottom" constant="50" id="yo6-9H-FCB"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="ie3-iu-Dh3" id="xGt-8D-cPc"/>
+                        <outlet property="text2" destination="3zP-kW-0O6" id="X4q-ed-MCo"/>
                         <outlet property="theLabel" destination="PNl-Na-hhm" id="y35-4o-50H"/>
                     </connections>
                 </viewController>
